@@ -3,13 +3,13 @@
 -- not accounting for the counties that have more than 10000 population in the year of 2010, 
 -- sorted by area in descending order.
 
-select id, abbr, sum(sq_km) as "area" from state 
-  join county 
-    on (state.id = county.state) 
-  join countypopulation 
-    on (county.fips = countypopulation.county)
-where not county in 
-    (Select county from countypopulation 
-     where year = 2010 and population > 10000) 
-group by abbr 
-order by sum(sq_km) desc;
+SELECT id, abbr, sum(sq_km) AS "area" FROM state 
+  JOIN county 
+    ON (state.id = county.state) 
+  JOIN countypopulation 
+    ON (county.fips = countypopulation.county)
+WHERE NOT county IN 
+    (SELECT county FROM countypopulation 
+     WHERE year = 2010 AND population > 10000) 
+GROUP BY abbr 
+ORDER BY sum(sq_km) DESC;
