@@ -13,7 +13,7 @@ These are the queries from an assignment meant to:
 The tables for this assignment were set up as below:
 
 CensusYear:
-  year - int
+  + year - int
 
 County:
   fips - int
