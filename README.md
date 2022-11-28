@@ -16,62 +16,62 @@ CensusYear:
   + year - int
 
 County:
-  fips - int
-  name - string
-  state - int
-  sq_km - float
-  precip - float
-  snow - float
-  temp - float
-  life_expectancy - float
-  avg_income - float
+  + fips - int
+  + name - string
+  + state - int
+  + sq_km - float
+  + precip - float
+  + snow - float
+  + temp - float
+  + life_expectancy - float
+  + avg_income - float
   
 CountyIndustries:
-  county - int
-  industry - int
-  payroll - int
-  employees - int
+  + county - int
+  + industry - int
+  + payroll - int
+  + employees - int
   
 CountyLabourStats:
-  county - int
-  year - int
-  labour_force - int
-  employed - jnt
-  unemployed - int
+  + county - int
+  + year - int
+  + labour_force - int
+  + employed - jnt
+  + unemployed - int
   
 CountyPopulation:
-  county - int
-  year - int
-  population - int
+  + county - int
+  + year - int
+  + population - int
   
 Election:
-  year - int
+  + year - int
   
 ElectionResult:
-  county - int
-  year - int
-  total_votes - int
-  dem - int
-  gop - int
+  + county - int
+  + year - int
+  + total_votes - int
+  + dem - int
+  + gop - int
 
 Gender:
-  name - string
+  + name - string
 
 GenderBreakdown:
-  county - int
-  gender - string
-  population - int
+  + county - int
+  + gender - string
+  + population - int
   
 Industry:
-  id - int
-  name - string
+  + id - int
+  + name - string
   
 LabourSurvey:
-  year - int
+  + year - int
   
 State:
-  id - int
-  abbr - char(2)
+  + id - int
+  + abbr - char(2)
 
 
 
